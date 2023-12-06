@@ -1,11 +1,9 @@
 package lab0;
 
-import static org.testng.Assert.assertEquals;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import lab0.Variant11;
+import static org.testng.Assert.assertEquals;
 
 class Variant11Test {
     @Test

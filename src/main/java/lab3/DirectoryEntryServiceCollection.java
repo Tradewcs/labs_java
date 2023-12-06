@@ -4,10 +4,7 @@ import lab1.DirectoryEntry;
 import lab1.FileEntry;
 import lab1.Mode;
 
-import java.io.File;
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class DirectoryEntryServiceCollection implements DirectoryEntryService {

@@ -1,0 +1,13 @@
+[ {
+  "mark" : "Opel",
+  "model" : "Combo",
+  "type" : "carClass",
+  "wheels" : 4,
+  "engineSize" : 1.6
+}, {
+  "mark" : "Е koda",
+  "model" : "Octavia",
+  "type" : "carClass",
+  "wheels" : 4,
+  "engineSize" : 2.0
+} ]
