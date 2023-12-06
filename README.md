@@ -1,1 +1,1 @@
-# JavaLabs3rdYear
+# Java labs
