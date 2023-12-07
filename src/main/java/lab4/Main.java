@@ -15,7 +15,7 @@ public class Main {
         try {
             FileEntry fileEntry = new FileEntry.Builder()
                     .name("")
-                    .size(-1024)
+                    .size(0)
                     .build();
 
             System.out.println(fileEntry);

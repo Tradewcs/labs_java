@@ -16,7 +16,7 @@ import java.util.Set;
 public class FileEntry {
     private String name;
     private long size;
-    private final LocalDate created;
+    private LocalDate created;
     private Mode mode;
 
     public FileEntry(String name, long size) {
@@ -70,6 +70,9 @@ public class FileEntry {
 
     public long getSize() {
         return size;
+    }
+    public void setCreated(LocalDate created) {
+        this.created = created;
     }
 
     @Override

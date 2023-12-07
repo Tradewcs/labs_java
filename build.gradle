@@ -37,7 +37,7 @@ dependencies {
 
     implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.16.0"
 
-    implementation "org.glassfish.expressly:expressly:5.0.0"
+//    implementation "org.glassfish.expressly:expressly:5.0.0"
 
     implementation 'jakarta.validation:jakarta.validation-api:3.1.0-M1'
 
