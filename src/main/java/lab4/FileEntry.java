@@ -71,8 +71,18 @@ public class FileEntry {
     public long getSize() {
         return size;
     }
+
+
     public void setCreated(LocalDate created) {
         this.created = created;
+    }
+
+    public LocalDate getCreated() {
+        return this.created;
+    }
+
+    public Mode getMode() {
+        return mode;
     }
 
     @Override
@@ -85,10 +95,6 @@ public class FileEntry {
                 this.size == fe.size &&
                 this.created.equals(fe.created) &&
                 this.mode.equals(fe.mode);
-    }
-
-    public LocalDate getCreated() {
-        return this.created;
     }
 
     @Override

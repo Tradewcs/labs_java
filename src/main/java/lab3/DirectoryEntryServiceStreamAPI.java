@@ -1,9 +1,10 @@
 package lab3;
 
-import lab1.DirectoryEntry;
-import lab1.FileEntry;
-import lab1.Mode;
+import lab4.DirectoryEntry;
+import lab4.FileEntry;
+import lab4.Mode;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -33,6 +34,13 @@ public class DirectoryEntryServiceStreamAPI implements DirectoryEntryService {
     public List<FileEntry> getFilesByMode(Mode mode) {
         return root.getFiles().stream()
                 .filter(fe -> fe.getMode().equals(mode))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<FileEntry> getFilesByDateInRange(LocalDate begin, LocalDate end) {
+        return root.getFiles().stream()
+                .filter(fe -> fe.getCreated().isAfter(begin) && fe.getCreated().isBefore(end))
                 .collect(Collectors.toList());
     }
 

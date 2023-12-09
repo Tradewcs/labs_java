@@ -1,8 +1,8 @@
 package lab3;
 
-import lab1.DirectoryEntry;
-import lab1.FileEntry;
-import lab1.Mode;
+import lab4.DirectoryEntry;
+import lab4.FileEntry;
+import lab4.Mode;
 
 import java.util.List;
 

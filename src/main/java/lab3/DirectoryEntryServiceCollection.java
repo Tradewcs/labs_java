@@ -1,9 +1,11 @@
 package lab3;
 
-import lab1.DirectoryEntry;
-import lab1.FileEntry;
-import lab1.Mode;
+import lab4.DirectoryEntry;
+import lab4.FileEntry;
+import lab4.Mode;
 
+import java.io.File;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,6 +54,19 @@ public class DirectoryEntryServiceCollection implements DirectoryEntryService {
         }
 
         return  result;
+    }
+
+    @Override
+    public List<FileEntry> getFilesByDateInRange(LocalDate begin, LocalDate end) {
+        List<FileEntry> result = new ArrayList<>();
+
+        for (FileEntry fe : root.getFiles()) {
+            if (fe.getCreated().isAfter(begin) && fe.getCreated().isBefore(end)) {
+                result.add(fe);
+            }
+        }
+
+        return result;
     }
 
     @Override
